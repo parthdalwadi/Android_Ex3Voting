@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vote Please"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/title" />
+
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:background="#999"
+            android:id="@+id/vname"
+            android:layout_marginLeft="50sp"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+
+    <TableRow
+
+        android:layout_marginTop="20dp"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:background="#999"
+            android:id="@+id/vid"
+            android:layout_marginLeft="50sp"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+    <Spinner
+        android:id="@+id/selectCandidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/candidates_list"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:layout_margin="20dp">
+        <ToggleButton
+            android:layout_weight="1"
+            android:textOn="Accept"
+            android:textOff="Refuse"
+            android:checked="true"
+            android:id="@+id/toggleAR"
+            />
+
+        <Button
+            android:layout_weight="2"
+            android:text="Vote"
+            android:id="@+id/voteBtn"/>
+
+    </TableRow>
+
+
+
+</TableLayout>
